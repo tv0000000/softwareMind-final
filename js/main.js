@@ -1,7 +1,6 @@
 (function () {
   "use strict";
-
-  // NO SACAR ESTA FUNCION SE ROMPE TODO
+  // No sacar se rompe 
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
@@ -10,14 +9,13 @@
       return document.querySelector(el)
     }
   }
-  
-  // NO SACAR ESTA FUNCION SE ROMPE TODO
+
+  // No sacar se rompe
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
 
-
-  // NO SACAR ESTA FUNCION NO FUNCIONA BOTON 
+// backtotop
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
@@ -30,30 +28,10 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-
-  // inicia
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
-  });
-
-// Menu hamburguesa
-const hamburgerMenu = select('.hamburger-menu');
-const navList = select('nav ul.menu-responsive');
-
-hamburgerMenu.addEventListener('click', () => {
-  navList.classList.toggle('show');
-});
-
 })()
 
 
-// ********* Mis js *********
-// - Testimonials Slider
+// Section Testimonials
 new Swiper('.testimonials-slider', {
   speed: 600,
   loop: true,
@@ -73,9 +51,19 @@ new Swiper('.testimonials-slider', {
       slidesPerView: 1,
       spaceBetween: 20
     }
-  }  
+  }
 });
 
 // Section Counts
 new PureCounter();
 // end section seven
+
+// AOS
+window.addEventListener('load', () => {
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false
+  })
+});
