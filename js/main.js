@@ -1,35 +1,30 @@
-(function () {
-  "use strict";
-  // No sacar se rompe 
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
+// AOS
+window.addEventListener('load', () => {
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false
+  })
+});
+
+// Backtotop
+function toggleBackToTopButton() {
+  const backToTopButton = document.querySelector('.back-to-top');
+
+  function handleScroll() {
+    if (window.scrollY > 100) {
+      backToTopButton.classList.add('active');
     } else {
-      return document.querySelector(el)
+      backToTopButton.classList.remove('active');
     }
   }
 
-  // No sacar se rompe
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
+  window.addEventListener('load', handleScroll);
+  window.addEventListener('scroll', handleScroll);
+}
 
-// backtotop
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-})()
-
+toggleBackToTopButton();
 
 // Section Testimonials
 new Swiper('.testimonials-slider', {
@@ -56,14 +51,4 @@ new Swiper('.testimonials-slider', {
 
 // Section Counts
 new PureCounter();
-// end section seven
 
-// AOS
-window.addEventListener('load', () => {
-  AOS.init({
-    duration: 1000,
-    easing: 'ease-in-out',
-    once: true,
-    mirror: false
-  })
-});

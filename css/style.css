@@ -43,7 +43,6 @@ h4 {
 }
 
 .back-to-top:hover {
-  /* background-color: #ffa500; */
   transform: scale(1.1);
   color: #fff;
 }
@@ -56,24 +55,34 @@ h4 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 header a {
   text-transform: uppercase;
   font-weight: 700;
 }
 
 header .logo {
-  font-size: 28px;
+  font-size: 20px;
   font-style: italic;
+  margin-left: 30px;
 }
 
 header .contact-button {
   font-weight: 700;
   transition: transform 0.1s;
-  margin: auto 0px;
+  font-size: 20px;
 }
 
 header .contact-button:hover {
   transform: scale(1.02);
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  margin-right: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -85,8 +94,7 @@ header .contact-button:hover {
   height: 170vh;
   position: relative;
   margin-top: -80px;
-  background-image: url(../img/working-img-3.jpg);
-  /* PROBLEMA IMG RESPONSIVE A PARTIR DE LOS 369px APROX!*/
+  background-image: url(../img/working-img-4.jpg);
   background-size: cover;
 }
 
@@ -109,8 +117,8 @@ header .contact-button:hover {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  text-align: center;
-  width: 100%;
+  /* text-align: center; */
+  /* width: 100%; */
 }
 
 .hero-text-three {
@@ -176,11 +184,11 @@ header .contact-button:hover {
 }
 
 .about-p {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .about-p-two {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: -15px;
 }
 
@@ -192,7 +200,7 @@ header .contact-button:hover {
 }
 
 .img-client {
-  width: 150px;
+  width: 140px;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
@@ -239,7 +247,6 @@ ouer-offer
 }
 
 @media (max-width: 990px) {
-
   .ouer-container-one {
     text-align: center;
     left: 0;
@@ -322,17 +329,36 @@ ouer-offer
 }
 
 .nearshoring-section h3 {
+
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
   text-transform: uppercase;
   font-weight: bolder;
   background-image: linear-gradient(94.17deg, rgb(18, 38, 77) 2.01%, rgb(132, 12, 49) 13.67%, rgb(199, 9, 39) 25.48%, rgb(252, 102, 35) 37.39%, rgb(255, 189, 48) 49.62%);
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent;  
+}
+
+.nearshoring-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(135deg, rgb(18, 38, 77) 0%, rgb(132, 12, 49) 24.48%, rgb(199, 9, 39) 49.3%, rgb(252, 102, 35) 74.31%, rgb(255, 189, 48) 100%);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  border: none;
 }
 
 .nearshoring-section p {
   font-weight: 400;
-  line-height: 1.406rem;
-  letter-spacing: -0.02em;
+  font-size: 18px;
+  /* line-height: 1.406rem; */
+  /* letter-spacing: -0.02em; */
 }
 
 .nearshoring-section .items {
@@ -432,32 +458,13 @@ Final section
 }
 
 .final-p {
-  font-size: 52px;
+  font-size: 38px;
   text-transform: uppercase;
   margin-top: 60px;
 }
 
 .about-text-final {
-  font-size: 32px;
+  font-size: 26px;
 
 }
 
-/* .containerFinal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-box {
-  text-align: center;
-}
-
-.text-box p {
-  font-size: 38px;
-} */
-
-/* .text-box .final-p {
-  font-size: 52px;
-  text-transform: uppercase;
-  margin-top: 60px;
-} */
