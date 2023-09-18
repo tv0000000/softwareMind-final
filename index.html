@@ -22,50 +22,52 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!--Font Awesome -->
 	<script src="https://kit.fontawesome.com/dcca6c8176.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
 	<!-- ======= Header ======= -->
 	<header>
-		<nav class="navbar navbar-expand-lg bg-body fixed-top">
+		<nav class="navbar navbar-expand-lg bg-transparent fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand logo" href="#">Software Mind</a>
+				<a class="navbar-brand logo" href="index.html">
+					<img src="img/software-mind-logo-color.svg" height="25">
+				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon navbar-dark navbar-ligth"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-end">
 						<li class="nav-item">
-							<a class="nav-link contact-button" href="#">Request Contact</a>
+							<a data-collapse-target="#contactus" data-bs-toggle="collapse" href="#contactus"
+								class="nav-link contact-button btn-collapse-target ease">Contact Us</a>
 						</li>
+						<li class="no-link">OR</li>
 						<li class="nav-item">
-							<a class="nav-link contact-button" href="#">Contact</a>
+							<a data-collapse-target="#contactrequest" data-bs-toggle="collapse" href="#contactrequest"
+								class="nav-link contact-button btn-collapse-target ease">Request Contact</a>
 						</li>
+
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
-	<!-- End Header -->
 
 	<!-- ======= Hero ======= -->
 	<section id="hero" class="d-flex align-items-center">
 		<div class="container text-center">
-			<h1 data-aos="fade-up" data-aos-delay="400">Highly-skilled and cost-efficient software
+			<h1 class="mb-5" data-aos="fade-up" data-aos-delay="200">Highly-skilled and cost-efficient software
 				development teams?</h1>
-			<h2 data-aos="fade-up" data-aos-delay="800" class="mt-4">USA, meet <span class="span-hero">Software
-					Mind</span></h2>
-
+			<h2 data-aos="fade-up" data-aos-delay="400" class="my-5">USA, meet
+				<br>
+				<img src="img/software-mind-logo-white.svg" height="50" class="mt-4">
+			</h2>
 			<div class="icon-hero">
-				<div data-aos="fade-up">
+				<div class=" mb-5" data-aos="fade-up" data-aos-delay="800">
 					<h3>How do some of the best companies in the US build their tech?
 					</h3>
-					<div class="scroll-down">
-						<span>&#9660;</span>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -74,108 +76,129 @@
 
 	<!-- ======= About Section ======= -->
 	<section class="section-general">
-		<h3 class="about-title text-center" data-aos="fade-up" data-aos-delay="400">
+		<h3 class="about-title text-center" data-aos="fade-up" data-aos-delay="200">
 			By trusting us to accelerate their software delivery and reduce engineering costs
 		</h3>
 
-		<div class="container container-client" data-aos="fade-up" data-aos-delay="400">
+		<div class="container container-client" data-aos="fade-up" data-aos-delay="200">
 			<div class="row text-center gy-4">
 				<div class="col">
-					<img class="img-client" src="img/logo-client-placeholder.svg" alt="Imagen cliente 1">
+					<img class="img-client mb-5" src="img/logo-client-placeholder.svg" alt="Imagen cliente 1" data-aos="fade-up" data-aos-delay="400">
 				</div>
 				<div class="col">
-					<img class="img-client" src="img/logo-client-placeholder.svg" alt="Imagen cliente 2">
+					<img class="img-client mb-5" src="img/logo-client-placeholder.svg" alt="Imagen cliente 2" data-aos="fade-up" data-aos-delay="600">
 				</div>
 				<div class="col">
-					<img class="img-client" src="img/logo-client-placeholder.svg" alt="Imagen cliente 3">
+					<img class="img-client mb-5" src="img/logo-client-placeholder.svg" alt="Imagen cliente 3" data-aos="fade-up" data-aos-delay="800">
 				</div>
 				<div class="col">
-					<img class="img-client" src="img/logo-client-placeholder.svg" alt="Imagen cliente 4">
+					<img class="img-client mb-5" src="img/logo-client-placeholder.svg" alt="Imagen cliente 4" data-aos="fade-up" data-aos-delay="1000">
 				</div>
 				<div class="col">
-					<img class="img-client" src="img/logo-client-placeholder.svg" alt="Imagen cliente 5">
+					<img class="img-client mb-5" src="img/logo-client-placeholder.svg" alt="Imagen cliente 5" data-aos="fade-up" data-aos-delay="1200">
 				</div>
 			</div>
 		</div>
 
 		<div class="container text-center">
-			<div class="about-text" data-aos="fade-up" data-aos-delay="400">
-				<p>Companies like x x x x x x x x x x have been relying on Software Mind for more than X years because
+			<div class="about-text" data-aos="fade-up" data-aos-delay="1400">
+				<p>Companies like x x x have been relying on Software Mind for more than X years because
 					of our Cost-Effectiveness, English Proficiency, Cultural Fit, Top-Notch Academic
 					Level, and Senior Experience
 				</p>
 			</div>
 
-			<div data-aos="fade-up" data-aos-delay="400">
-				<h4 class="title mb-5">Software Mind in five words</h4>
-				<img class="img-about" src="img/5-words.svg" alt="imagen five word software Mind">
+			<div class="d-flex flex-column align-items-center mt-6 mb-5" data-aos="fade-up" data-aos-delay="1400">
+				<h4 class="title">Software Mind in five words</h4>
+				<img class="img-fluid mt-6" src="img/5-words.svg" alt="five words software Mind">
 			</div>
 		</div>
 	</section>
 	<!-- end About Section -->
 
-	<!-- our-Offer Section -->
+	<!-- Our Offer Section -->
 	<section class="our-offer section-general">
-
 		<div class="container">
-			<div class="row" data-aos="fade-up" data-aos-delay="400">
-				<div class="col-lg-6 our-container-one">
-					<h4>Let’s build your next idea together:</p>
-					<p class="our-text text-uppercase">Our offer</p>
-					<h4>"Driven by tech, empowered by people"</p>
+			<div class="row" data-aos="fade-up" data-aos-delay="200">
+				<div class="col-12 mb-5">
+					<h4 class="title white left">Why outsource with us?</h4>
 				</div>
-
-				<div class="col-lg-6 our-container-two">
-					<div class="mb-5">
-						<h3 data-aos="fade-up" data-aos-delay="400">IT Staff Augmentation</h3>
-						<p data-aos="fade-up" data-aos-delay="400">We provide our remote software partners with members from
-							our team to become part of their projects.</p>
-					</div>
-					<div class="mb-5">
-						<h3 data-aos="fade-up" data-aos-delay="400">Autonomous team</h3>
-						<p data-aos="fade-up" data-aos-delay="400">Improve your capacity with a self-managed, proactive team
-							of senior developers and a manager who reports directly to you.</p>
-					</div>
-					<div class="mb-5">
-						<h3 data-aos="fade-up" data-aos-delay="400">Low-cost development</h3>
-						<p data-aos="fade-up" data-aos-delay="400">Create a bigger, LATAM-based team of experts and more cost-efficient engineers</p>
-					</div>
+				<div class="col-lg-5 our-container-one">
+					<p class="our-text">We are a trustworthy partner ready to work with remarkable companies</p>
 				</div>
-			</div>
-		</div>
-
-	</section>
-	<!-- end our-Offer Section -->
-
-	<!-- why Section -->
-	<section class="my-5 why-section">
-
-		<div class="text-center why-section-one">
-			<h4 class="title mb-5" data-aos="fade-up" data-aos-delay="400">Why outsource with us?</h4>
-			<p class="h3" data-aos="fade-up" data-aos-delay="400">We are a trustworthy partner ready to work with remarkable companies</p>
-		</div>
-
-		<div class="container text-center" data-aos="fade-up" data-aos-delay="400">
-			<div class="row">
-				<div class="col-md-4 offset-md-2 mb-4">
-					<div class="card custom-card">
-						<div class="card-img-container">
-							<img src="img/img-us-1.jpg" class="card-img-zoom" alt="Image 1">
+				<div class="offset-md-1 col-lg-6 our-container-two">
+					<div class="our-item mb-5 row align-items-center">
+						<div class="col-auto">
+							<i class="fa-solid fa-circle fa-1x"></i>
 						</div>
-						<div class="card-body card-1">
-							<p class="card-text-1">Experience working with US companies since XXXX on creative,
-								innovative, and challenging software solutions.
+						<div class="col our-item">
+							<p class="mb-0">Experience working with US companies since XXXX on creative, innovative, and
+								challenging software solutions.
+							</p>
+						</div>
+					</div>
+
+					<div class="our-item mb-4 row align-items-center">
+						<div class="col-auto">
+							<i class="fa-solid fa-circle fa-1x"></i>
+						</div>
+						<div class="col our-item">
+							<p class="mb-0">Professionals with proactivity, responsibility, commitment, and eagerness to
+								mark a difference.
 							</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 mb-4">
-					<div class="card custom-card">
+			</div>
+		</div>
+	</section>
+	<!-- end Our Offer Section -->
+
+	<!-- Why Section -->
+	<section class="py-5 why-section bg-black">
+
+		<div class="text-center why-section-one color-white">
+			<h4 class="title white mb-5" data-aos="fade-up" data-aos-delay="200">Our Offer</h4>
+			<p class="" data-aos="fade-up" data-aos-delay="400">Let’s build your next idea together:</p>
+			<h3 class="mb-5" data-aos="fade-up" data-aos-delay="400">Driven by tech, empowered by people</h3>
+		</div>
+
+		<div class="container" data-aos="fade-up" data-aos-delay="400">
+			<div class="row justify-content-center">
+				<div class="col-md-3 mb-4">
+					<div class="card custom-card custom-card-1" data-aos="fade-up" data-aos-delay="400">
+						<div class="card-img-container">
+							<img src="img/img-us-2.jpg" class="card-img-zoom" alt="Image 1">
+						</div>
+						<div class="card-body multicolor color-white">
+							<h5>IT Staff Augmentation</h5>
+							<p class="card-text-1">We provide our remote software partners with members from our team to
+								become part of their projects.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-4">
+					<div class="card custom-card" data-aos="fade-up" data-aos-delay="600">
+						<div class="card-body bg-primary">
+							<h5 cl>Autonomous team</h5>
+							<p class="card-text-2">Improve your capacity with a self-managed, proactive team of senior
+								developers and a manager who reports directly to you.</p>
+						</div>
 						<div class="card-img-container">
 							<img src="img/img-us-2.jpg" class="card-img-zoom" alt="Image 2">
 						</div>
-						<div class="card-body card-2">
-							<p class="card-text-2">Professionals with proactivity, responsibility, commitment, and eagerness to mark a difference.</p>
+					</div>
+				</div>
+				<div class="col-md-3 mb-4">
+					<div class="card custom-card" data-aos="fade-up" data-aos-delay="800">
+						<div class="card-img-container">
+							<img src="img/img-us-2.jpg" class="card-img-zoom" alt="Image 2">
+						</div>
+						<div class="card-body bg-gray card-2">
+							<h5>Low-cost development</h5>
+							<p class="card-text-2">Create a bigger, LATAM-based team of experts and more cost-efficient
+								engineers</p>
 						</div>
 					</div>
 				</div>
@@ -183,60 +206,53 @@
 		</div>
 
 	</section>
-	<!-- end why Section -->
+	<!-- end Why Section -->
 
-	<!-- nearshoring Section -->
+	<!-- Nearshoring Section -->
 	<section class="nearshoring-section">
-		<h4 class="text-center title" data-aos="fade-up" data-aos-delay="400">Why is nearshoring your best choice
-			<br>to outsource your software services?</h4>
+		<div class="container">
+			<h4 class="text-center title" data-aos="fade-up" data-aos-delay="200">Why is nearshoring your best choice
+				<br>to outsource your software services?
+			</h4>
 
-		<div class="mt-5">
-			<div class="container aos-init aos-animate" data-aos="fade-up">
-				<div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-					<div class="col-lg-9 mt-2 items" data-aos="fade-up" data-aos-delay="400">
+			<div class="mt-5 container aos-init aos-animate" data-aos="fade-up">
+
+				<div class="row justify-content-center">
+
+					<div class="col-10 mt-2 items" data-aos="fade-up" data-aos-delay="400">
 						<div class="row">
-							<div class="col-auto">
-								<i class="fa-thin fa-rocket fa-4x"></i>	
+							<div class="col-auto mb-2">
+								<i class="fa-thin fa-rocket fa-4x color-primary"></i>
 							</div>
-							<div class="col-9">
-								<div class="d-flex flex-column">
-									<div class="">
-										<div class="">
-											<h3>Lower costs</h3>
-										</div>
-									</div>
-									<div class="">
-										<p>Add talent to your projects, while reducing costs and increasing efficiency. </p>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<!-- End Item -->
+							<div class="col d-flex flex-column align-items-start">
+								<h3>Lower costs</h3>
+								<p>Add talent to your projects, while reducing costs and increasing efficiency.</p>
 
-					<div class="offset-lg-3 col-lg-9 mt-2 items" data-aos="fade-up" data-aos-delay="400">
-						<div class="d-flex flex-column align-items-end">
-							<div>
-								<h3 class="">Improved efficiency</h3>
-							</div>
-							<div>
-								<p class="">Develop your projects quickly, with outsourced team members from aligned
-									time zones.
-								</p>
 							</div>
 						</div>
 					</div>
 					<!-- End Item -->
 
-					<div class="col-lg-9 mt-2 items" data-aos="fade-up" data-aos-delay="400">
-						<div class="d-flex flex-column">
-							<div class="">
-								<div class="">
-									<h3>Specialized skills</h3>
-								</div>
+					<div class="col-10 mt-2 items justify-content-end" data-aos="fade-up" data-aos-delay="600">
+						<div class="row">
+							<div class="col d-flex flex-column order-lg-1 order-2 align-items-end mb-2 items-responsive">
+								<h3>Improved efficiency</h3>
+								<p>Develop your projects quickly, with outsourced team members from aligned time zones.</p>
 							</div>
-							<div class="">
+							<div class="col-auto order-lg-2 order-1 mb-2">
+								<i class="fa-thin fa-gears fa-4x color-primary"></i>
+							</div>
+						</div>
+					</div>
+					<!-- End Item -->
+
+					<div class="col-10 mt-2 items" data-aos="fade-up" data-aos-delay="800">
+						<div class="row">
+							<div class="col-auto mb-2">
+								<i class="fa-thin fa-laptop-code fa-4x color-primary"></i>
+							</div>
+							<div class="col d-flex flex-column align-items-start">
+								<h3>Specialized skills</h3>
 								<p>Bring highly trained and specialized professionals to make your projects successful.
 								</p>
 							</div>
@@ -244,49 +260,52 @@
 					</div>
 					<!-- End Item -->
 
-					<div class="offset-lg-3 col-lg-9 mt-2 items" data-aos="fade-up" data-aos-delay="400">
-						<div class="d-flex flex-column align-items-end">
-							<div class="">
-								<h3 class="">Reduced workload</h3>
-							</div>
-							<div class="">
-								<p class="">Add specialized team members to address the most difficult issues more
+					<div class="col-10 mt-2 items" data-aos="fade-up" data-aos-delay="1000">
+						<div class="row">
+							<div class="col d-flex flex-column align-items-end order-lg-1 order-2 mb-2 items-responsive">
+								<h3>Reduced workload</h3>
+								<p>Add specialized team members to address the most difficult issues more
 									collaboratively.
 								</p>
+							</div>
+							<div class="col-auto order-lg-2 order-1 mb-2">
+								<i class="fa-thin fa-clock-three fa-4x color-primary"></i>
 							</div>
 						</div>
 					</div>
 					<!-- End Item -->
 
-					<div class="col-lg-9 mt-2 items" data-aos="fade-up" data-aos-delay="400">
-						<div class=" d-flex flex-column">
-							<div class="">
-								<div class="">
-									<h3>Increased competition</h3>
-								</div>
+					<div class="col-10 mt-2 items" data-aos="fade-up" data-aos-delay="1200">
+						<div class="row">
+							<div class="col-auto mb-2">
+								<i class="fa-thin fa-trophy-star fa-4x color-primary"></i>
 							</div>
-							<div class="">
+							<div class="col d-flex flex-column align-items-start">
+								<h3>Increased competition</h3>
 								<p>Access to some of the best talent to help you achieve your goals
 									and not fall behind in this changing world.
 								</p>
 							</div>
 						</div>
+
 					</div>
 					<!-- End Item -->
 
-					<div class="offset-lg-3 col-lg-9 mt-2 items" data-aos="fade-up" data-aos-delay="400">
-						<div class="d-flex flex-column align-items-end">
-							<div class="">
-								<h3 class="">Long-lasting partnerships</h3>
-							</div>
-							<div class="">
-								<p class="">Guarantee a long-lasting relationship with your partner based on trust,
+					<div class="col-10 mt-2 items" data-aos="fade-up" data-aos-delay="1400">
+						<div class="row">
+							<div class="col d-flex flex-column align-items-end order-lg-1 order-2 mb-2 items-responsive">
+								<h3>Long-lasting partnerships</h3>
+								<p>Guarantee a long-lasting relationship with your partner based on trust,
 									transparency, and
 									commitment.
 								</p>
 							</div>
+							<div class="col-auto mb-2 order-lg-2 order-1 mb-2">
+								<i class="fa-thin fa-handshake fa-4x color-primary"></i>
+							</div>
 						</div>
 					</div>
+
 					<!-- End Item -->
 				</div>
 			</div>
@@ -294,9 +313,9 @@
 
 	</section>
 
-	<!-- end nearshoring Section -->
+	<!-- end Nearshoring Section -->
 
-	<!-- testimonial Section -->
+	<!-- Testimonial Section -->
 	<section id="testimonials" class="testimonials section-general">
 		<div class="container carrousel-container" data-aos="fade-up">
 			<h4 class="title white text-center">Let our testimonies speak for us!</h4>
@@ -307,9 +326,12 @@
 						<div class="item">
 							<p class="quotes">“</p>
 							<div class="text-center">
-								<p class="carrousel-text small">We didn’t want to outsource to a vendor, we wanted to build a
-									team with a partner. Virtualmind is OUR team. They are an integral part of our company and we
-									wouldn’t want to build software without them. True partners are hard to find and our team and friends
+								<p class="carrousel-text small">We didn’t want to outsource to a vendor, we wanted to
+									build a
+									team with a partner. Virtualmind is OUR team. They are an integral part of our
+									company and we
+									wouldn’t want to build software without them. True partners are hard to find and our
+									team and friends
 									at Virtualmind exemplify what a true partnership is about.
 								</p>
 							</div>
@@ -322,7 +344,8 @@
 						<div class="item">
 							<p class="quotes">“</p>
 							<div class="text-center">
-								<p class="carrousel-text large">Virtualmind’s culture and core values align well with ours.
+								<p class="carrousel-text large">Virtualmind’s culture and core values align well with
+									ours.
 								</p>
 							</div>
 							<p class="text-center carrousel-text-two">Uriel Zarco, Project Leader, Beck Technology</p>
@@ -359,7 +382,8 @@
 						<div class="item">
 							<p class="quotes">“</p>
 							<div class="text-center">
-								<p class="carrousel-text large"> VirtualMind does excellent work at an appropriate price.</p>
+								<p class="carrousel-text large"> VirtualMind does excellent work at an appropriate
+									price.</p>
 							</div>
 							<p class="text-center carrousel-text-two">Jesse Brouhard, CTO, Labor Market Analytics Firm
 							</p>
@@ -390,14 +414,14 @@
 	<section id="counts" class=" section-general">
 
 		<div data-aos="zoom-out">
-			<p class="h2 text-center"><strong>The support</strong> you need <strong>to empower your success</strong></p>
+			<h4 class="title text-center">The support you need to empower your success</h4>
 		</div>
 
-		<div class="container-counts row justify-content-center counts-section" data-aos="zoom-out">
+		<div class="mt-5 container-counts row justify-content-center counts-section" data-aos="zoom-out">
 			<div class="counts-box col-auto">
 				<div class="d-flex justify-content-center">
 					<span class="span-add">+</span><span data-purecounter-start="0" data-purecounter-end="20"
-						data-purecounter-duration="2" class="purecounter"></span>
+						data-purecounter-duration="1" class="purecounter"></span>
 				</div>
 				<p>Year of Experience</p>
 			</div>
@@ -405,33 +429,33 @@
 			<div class="counts-box col-auto">
 				<div class="d-flex justify-content-center">
 					<span class="span-add">+</span><span data-purecounter-start="0" data-purecounter-end="35"
-						data-purecounter-duration="2" class="purecounter"></span>
+						data-purecounter-duration="1" class="purecounter"></span>
 				</div>
-				<p>Year of innovation</p>
+				<p>Year of Innovation</p>
 			</div>
 
 			<div class="counts-box col-auto">
 				<div class="d-flex justify-content-center">
 					<span class="span-add">+</span><span data-purecounter-start="0" data-purecounter-end="1300"
-						data-purecounter-duration="2" class="purecounter"></span>
+						data-purecounter-duration="1" class="purecounter"></span>
 				</div>
-				<p>experts</p>
+				<p>Experts</p>
 			</div>
 
 			<div class="counts-box col-auto">
 				<div class="d-flex justify-content-center">
 					<span class="span-add">+</span><span data-purecounter-start="0" data-purecounter-end="250"
-						data-purecounter-duration="2" class="purecounter"></span>
+						data-purecounter-duration="1" class="purecounter"></span>
 				</div>
-				<p>clients</p>
+				<p>Clients</p>
 			</div>
 
 			<div class="counts-box col-auto">
 				<div class="d-flex justify-content-center">
 					<span class="span-add">+</span><span data-purecounter-start="0" data-purecounter-end="1000"
-						data-purecounter-duration="2" class="purecounter"></span>
+						data-purecounter-duration="1" class="purecounter"></span>
 				</div>
-				<p>projects</p>
+				<p>Projects</p>
 			</div>
 		</div>
 
@@ -441,19 +465,116 @@
 	<!-- Final Section -->
 	<section class="container">
 		<div class="about-contanier final-section text-center">
-			<div class="about-text" data-aos="fade-up" data-aos-delay="400">
-				<p class="h3 text-center"><strong>Companies</strong> of all sizes, from all industries, and
-					<strong>all over the world trust us to develop</strong>, implement and maintain <strong>their powerful software  ideas</strong>
+			<div class="about-text" data-aos="fade-up" data-aos-delay="200">
+				<p class="text-center">Companies of all sizes, from all industries, and
+					all over the world trust us to develop, implement and maintain their
+					powerful software ideas
 				</p>
 			</div>
-
-			<p class="final-p"><strong>Start nearshoring today</strong></p>
+			<p class="final-p" data-aos="fade-up" data-aos-delay="600">Start nearshoring today</p>
 	</section>
+
+	<!-- ======= Footer ======= -->
+	<footer id="contact" class="contact bg-black color-white">
+		<div class="container">
+			<h4 class="title white text-center">Get in touch</h4>
+			<div class="row d-flex justify-content-center text-center mt-6">
+				<div class="col-md-3">
+					<a data-collapse-target="#contactus" data-bs-toggle="collapse" href="#contactus"
+						class="btn btn-default mb-5 nowrap btn-collapse-target ease">Contact Us</a>
+				</div>
+				<div class="col-md-3">
+					<a data-collapse-target="#contactrequest" data-bs-toggle="collapse" href="#contactrequest"
+						class="btn btn-default mb-5 nowrap btn-collapse-target ease">Request Contact</a>
+				</div>
+				<div class="col-md-3">
+					<a class="btn btn-default mb-5 nowrap ease" href="https://www.virtualmind.com/" target="blank_">Learn
+						more</a>
+				</div>
+			</div>
+
+			<div class="collapse" id="contactus">
+				<div class="row d-flex justify-content-center text-center">
+					<div class="col-md-4 mb-5 text-center">
+						<div class="mb-5 relative">
+							<a class="jm ease" href="https://meetings.hubspot.com/jminsky" target="_blank">Let's
+								get coffee!</a>
+							<img src="img/javier-minsky.jpg" class="border border-2 rounded-circle mb-4" width="200">
+							<h4>Javier Minsky</h4>
+							<h5 class="text-uppercase fw-bold mb-4">CEO of Virtualmind</h5>
+							<div class="container mb-4">
+								<a class="btn btn-default" href="https://www.linkedin.com/in/jminsky/"
+									target="_blank">
+									<i class="fa-brands fa-linkedin-in color-black me-2"></i>
+									jminsky
+								</a>
+							</div>
+							<a id="javier" class="h6 link" href="mailto:jminsky@virtualmind.com"
+								target="_blank">jminsky@virtualmind.com</a>
+							<div class="mt2">
+								<button class="btn btn-icon color-white mt-3" type="button"
+									onclick="copyToClipboard('jminsky@virtualmind.com', 'Button 1')">
+									<i class="fa-light fa-copy fa-1x5"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-5 text-center">
+						<div class="mb-5">
+							<img src="img/piotr-jachimczak.jpg" class="border border-2 rounded-circle mb-4" width="200">
+							<h4>Piotr Jachimczak</h4>
+							<h5 class="text-uppercase fw-bold mb-4">Software Development Director</h5>
+							<div class="container mb-4">
+								<a class="btn btn-default" href="https://www.linkedin.com/in/piotrjachimczak/"
+									target="_blank">
+									<i class="fa-brands fa-linkedin-in color-black me-2"></i>
+									piotrjachimczak
+								</a>
+							</div>
+							<a id="piotr" class="h6 link" href="mailto:pjachimczak@virtualmind.com"
+								target="_blank">pjachimczak@virtualmind.com</a>
+							<div class="mt2">
+								<button class="btn btn-icon color-white mt-3" type="button"
+									onclick="copyToClipboard('pjachimczak@virtualmind.com', 'Button 2')">
+									<i class="fa-light fa-copy fa-1x5"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="successMessage" class="success-message"></div>
+			</div>
+
+			<div class="collapse justify-content-center" id="contactrequest">
+				<div class="row justify-content-center text-center mb-5 mt-5" id="request">
+					<div class="col-8 mb-3">
+						<h4 class="title white text-center">Drop us a line here!</h4>
+					</div>
+					<div class="col-8 form-bg">
+						<div class="mt-4">
+							<script charset="utf-8" type="text/javascript"
+								src="//js.hsforms.net/forms/embed/v2.js"></script>
+							<script>
+								hbspt.forms.create({
+									region: "na1",
+									portalId: "6686594",
+									formId: "859208a3-2118-4984-83f0-075b4c95677c"
+								});
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center">
+				<img src="img/software-mind-logo-white.svg" height="20">
+				<div class="small mt-4">Copyright © 2023 by Software Mind. All rights reserved.</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
 	<!-- End Final Section -->
 
 	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
 			class="fa-solid fa-arrow-up"></i></a>
-	<!-- <div id="preloader"></div> -->
 
 	<!-- JS file -->
 	<!-- purecounter -->
@@ -469,8 +590,50 @@
 	<!-- fontawesome -->
 	<script src="https://kit.fontawesome.com/08d18d8385.js" crossorigin="anonymous"></script>
 	<!-- Main JS File -->
-	<script src=" js/main.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
+
+<script>
+	function copyToClipboard(text, buttonId) {
+		navigator.clipboard.writeText(text);
+		showSuccessMessage(buttonId);
+	}
+
+	function showSuccessMessage(buttonId) {
+		var successMessage = document.getElementById('successMessage');
+		successMessage.innerHTML = 'Successfully copied to clipboard!';
+		successMessage.style.display = 'block';
+		successMessage.style.animation = 'fadeIn 1s forwards';
+
+		setTimeout(function () {
+			successMessage.style.animation = 'fadeOut 1s forwards';
+		}, 2000);
+	}
+</script>
+
+<script>
+	var btnCollapseTarget = document.querySelectorAll('.btn-collapse-target');
+
+	if (btnCollapseTarget) {
+		btnCollapseTarget.forEach(function (el) {
+			el.addEventListener('click', function (e) {
+				var collapseTarget = document.querySelector(el.getAttribute('data-collapse-target'));
+
+				if (!collapseTarget.classList.contains('show')) {
+					e.preventDefault();
+
+					var collapseTargetContainer = bootstrap.Collapse.getInstance(collapseTarget) ? bootstrap.Collapse.getInstance(collapseTarget) : new bootstrap.Collapse(collapseTarget, { toggle: false });
+					collapseTargetContainer.show();
+
+					collapseTarget.addEventListener('shown.bs.collapse', function (e) {
+						document.querySelector(el.getAttribute('href')).scrollIntoView();
+					});
+				}
+			}, false);
+		});
+	}
+
+</script>
 
 </html>
